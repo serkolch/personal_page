@@ -2,101 +2,93 @@
 <html>
 <head>
   <title>S Kolchinskiy</title>
-  <link rel="stylesheet" href="style.css"> 
+  <link type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,300italic" rel="stylesheet" type="text/css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <link href="animate.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-2.1.4.js"></script>  
   <script src="main.js"></script>
 </head>
 <body>
 
-  <div id="header">
-    <h1 id="name">Sergey Kolchinskiy</h1>
-    <h2 class="tag">Web Developer. Volleyball Coach. Engineer</h2>
-    <ul id="links">
-      <li>About Me</li>
-      <li>Web Projects</li>
-      <li>Volleyball</li>
-      <li>Engineering</li>
-    </ul>
+  <div class="bg-image"></div>
+  <div class="overlay"></div>
+
+  <div class="header">
+    <div class="inner animated fadeInUp">
+      <h1>Sergey Kolchinskiy</h1>
+      <h2>Web Developer. Volleyball Coach. Engineer</h2>
+      <h3>serkolch@gmail.com</h3>
+      <div class="icons-container">
+        <a target="_blank" href="https://github.com/serkolch">
+            <i class="fa fa-github fa-lg"></i>
+        </a>
+        <a target="_blank" href="https://twitter.com/serkolch">
+            <i class="fa fa-twitter fa-lg"></i>
+        </a>
+        <a target="_blank" href="https://www.linkedin.com/in/serkolch">
+            <i class="fa fa-linkedin fa-lg"></i>
+        </a>
+      </div> <!-- icons-container -->
+    </div> <!-- inner -->
   </div> <!-- header -->
 
-  <div id="about_me">
-    <h2 class="tag">About Me</h2>
-    <div id="about">
-      <div id="pics">
-        <img class="profile" src="sergey_profile.png">
-      </div> <!-- pics -->
-      <div id="about_blurb">
-        <h3 id="first">Hello! My name is Sergey Kolchinskiy</h3>
-        <h3>I'm studying full-stack web development at General Assembly currently, focusing on honing my algorithm building & design skills to develop the foundations necessary to work at young tech companies</h3>
-        <h3>After picking up volleyball in 2008, HVMAC championship winning seasons and an all-conference bid, I now help coach men's and women's volleyball at The Cooper Union in the East Village. </h3>
-        <h3>I studied and received both Bachelors and Masters degrees in Chemical Engineering from The Cooper Union. Check out some of my work in plant & industrial design, and optimization!</h3>
-      </div> <!-- about_blurb -->
+  <div class="content">
+    <div class="about">
+      <h1>About</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at orci sit amet diam aliquet suscipit ut non quam. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris ut massa faucibus, scelerisque urna sed, rhoncus justo. Integer ac purus libero. In vel augue nec neque rhoncus elementum. Vestibulum tempus sed est sit amet blandit. Mauris pulvinar eleifend elit quis placerat.
+      <br><br>
+      In sodales volutpat magna, quis dignissim dui sodales nec. Nulla est urna, fringilla eu dignissim ut, convallis eu nulla. Duis bibendum imperdiet semper. Etiam sit amet purus ut purus malesuada malesuada. Pellentesque ac commodo mauris. Etiam diam nisl, convallis vel posuere ac, semper id orci. Maecenas ac ullamcorper orci. Cras at feugiat massa, quis posuere lacus. Vivamus eu rhoncus ipsum, et condimentum est. Phasellus faucibus at dui in volutpat. Aenean non posuere nibh. Pellentesque nec luctus urna. Fusce id fringilla elit. Nullam lobortis ac ipsum nec commodo. Suspendisse vitae venenatis elit. Nullam vel purus nunc.</p>
     </div> <!-- about -->
-  </div> <!-- about_me -->
+    <div class="projects">
+      <h1>Projects</h1>
 
-  <div id="web_projects">
-    <h2 class="tag">Web Projects</h2>
-    <div class="holder">
-      <img class="subholder" src="images/kanyesays.png">
-      <h3>Kanye Says</h3>
-    </div> <!-- holder -->
+      <div class="simon project">
+        <div class="project-overlay simon-overlay animated-short fadeIn">
+          <section class="container animated-short fadeInUp">
+            <h2 class="project-name">Kanye Says</h2>
+            <h3 class="project-desc">My first General Assembly project - a JQuery Simon Says game featuring Kanye West</h3>
+            <a class="view" href="#">View</a>
+          </section>
+        </div> <!-- simon-overlay -->
+      </div> <!-- simon -->
 
-    <div class="holder">
-      <img class="subholder" src="images/technicolor.png">
-      <h3>Technicolor Squares</h3>
-    </div> <!-- holder -->
+      <div class="music project">
+        <div class="project-overlay music-overlay animated-short fadeIn">
+          <section class="container animated-short fadeInUp">
+            <h2 class="project-name">Music Boxes</h2>
+            <h3 class="project-desc">A personal project - a musical octave with a randomizer to create random tunes</h3>
+            <a class="view" href="#">View</a>
+          </section>
+        </div> <!-- simon-overlay -->
+      </div> <!-- simon -->      
 
-    <div class="holder">
-      <img class="subholder" src="images/tictactoe.png">
-      <h3>TicTacToe</h3>          
-    </div> <!-- holder -->
+      <div class="forum project">
+        <div class="project-overlay forum-overlay animated-short fadeIn">
+          <section class="container animated-short fadeInUp">
+            <h2 class="project-name">Pick-Up Sports Forum</h2>
+            <h3 class="project-desc">My second General Assembly project - a forum for athletes to coordinate and discuss sports</h3>
+            <a class="view" href="#">View</a>            
+          </section>
+        </div> <!-- forum-overlay -->
+      </div> <!-- forum -->
 
-    <div class="holder">
-      <img class="subholder" src="images/shylock.png">
-      <h3>ShylockBot</h3>         
-    </div> <!-- holder -->
-  </div> <!-- web projects -->
+      <div class="quiz project">
+        <div class="project-overlay quiz-overlay animated-short fadeIn">
+          <section class="container animated-short fadeInUp">
+            <h2 class="project-name">QuizApp</h2>
+            <h3 class="project-desc">My third General Assembly project - create quizzes and track student performance</h3>
+            <a class="view" href="#">View</a>            
+          </section>
+        </div> <!-- quiz-overlay -->
+      </div> <!-- quiz -->
 
-  <div id="volleyball">
-    <h2 class="tag">Volleyball</h2>
-    <div class="holder">
-      <img class="subholder2" src="images/vb1.png">
-    </div> <!-- holder -->
 
-    <div class="holder">
-      <img class="subholder2" src="images/vb2.png">
-    </div> <!-- holder -->
 
-    <div class="holder">
-      <img class="subholder2" src="images/vb3.png">      
-    </div> <!-- holder -->
-
-    <div class="holder">
-      <img class="subholder2" src="images/vb4.png">     
-    </div> <!-- holder -->    
-  </div> <!-- volleyball -->
-
-  <div id="engineering">
-    <h2 class="tag">Engineering</h2>
-    <div class="holder">
-      <img class="subholder" src="images/eng1.png">
-      <h3>Hydrogen Fueling</h3>
-    </div> <!-- holder -->
-
-    <div class="holder">
-      <img class="subholder" src="images/eng2.png">
-      <h3>Folding Piano</h3>
-    </div> <!-- holder -->
-
-    <div class="holder">
-      <img class="subholder" src="images/eng3.png">
-      <h3>Ice Generation</h3>          
-    </div> <!-- holder -->
-
-    <div class="holder">
-      <img class="subholder" src="images/eng4.png">
-      <h3>Diet Optimization</h3>         
-    </div> <!-- holder -->
-  </div> <!-- web projects -->
+    </div> <!-- projects -->    
+  </div> <!-- content -->
 
 </body>
 </html>
