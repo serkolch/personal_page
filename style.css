@@ -173,7 +173,7 @@ span {
 
 @media (max-width : 480px) {
     .content, .header {
-      width:480px;
+      width: 480px;
     }
 
     .projects div {
@@ -185,9 +185,12 @@ span {
     }
 
     .quiz-overlay, .forum-overlay, .simon-overlay, .music-overlay {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			color: white;			
+			display: block;
+			color: white;
+			background-color: rgba(0,0,0,0.7);			
 		}
+
+		.quiz:hover .quiz-overlay, .forum:hover .forum-overlay, .simon:hover .simon-overlay, .music:hover .music-overlay {
+				display: block;
+			}
 }
