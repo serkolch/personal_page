@@ -195,12 +195,12 @@ span {
 		}
 
 		.header {
-			display: block;
+			display: -webkit-flex;
 		}
-
+/*
 		.inner {
 		  position: relative;
 		  top: 50%;
 		  transform: translateY(-50%);
-		}
+		}*/
 }
