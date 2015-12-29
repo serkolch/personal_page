@@ -187,11 +187,14 @@ span {
     .quiz-overlay, .forum-overlay, .simon-overlay, .music-overlay {
 			display: -webkit-flex;
 			color: white;
-			background-color: rgba(0,0,0,0.7);			
+			background-color: rgba(0,0,0,0.7);
+			align-items: center;
+			justify-content: center;
+			color: white;
 		}
 
 		.quiz:hover .quiz-overlay, .forum:hover .forum-overlay, .simon:hover .simon-overlay, .music:hover .music-overlay {
-			display: block;
+			display: -webkit-flex;			
 		}
 
 		.header {
