@@ -188,8 +188,8 @@ span {
 			display: -webkit-flex;
 			color: white;
 			background-color: rgba(0,0,0,0.7);
-			align-items: center;
-			justify-content: center;
+			-webkit-align-items: center;
+			-webkit-justify-content: center;
 			color: white;
 		}
 
