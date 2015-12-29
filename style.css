@@ -137,7 +137,7 @@ body {
 	padding: 25px;
 }
 
-.quiz:hover .quiz-overlay, .forum:hover .forum-overlay, .simon:hover .simon-overlay, .music:hover .music-overlay {
+.quiz:hover .quiz-overlay, .forum:hover .forum-overlay, .simon:hover .simon-overlay, .music:hover .music-overlay, .simon:focus .simon-overlay {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -161,7 +161,7 @@ body {
 	padding: 8px 12px;
 }
 
-.view:hover {
+.view:hover, .view:focus {
 	transition: all 0.3s;
 	background-color: #0093C4;
 	border: 1px solid #69D9FF;
