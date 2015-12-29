@@ -75,16 +75,20 @@ body {
 }
 
 .about, .projects {
-	width: 400px;
+	width: 480px;
 	margin: 0 auto;
 }
 
 .projects {
 	margin-top: 30px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 .content h1 {
 	font-size: 30px;
+	width: 100%;
 }
 
 .about p {
@@ -94,8 +98,8 @@ body {
 
 .projects div {
 	max-width: 100%;
-	width: 300px;
-	height: 250px;
+	width: 230px;
+	height: 200px;
 	border: 1px solid rgb(140,140,140);
 }
 
@@ -165,3 +169,4 @@ body {
 span {
 	font-weight: bolder;
 }
+
