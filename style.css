@@ -185,7 +185,7 @@ span {
     }
 
     .quiz-overlay, .forum-overlay, .simon-overlay, .music-overlay {
-			display: block;
+			display: -webkit-flex;
 			color: white;
 			background-color: rgba(0,0,0,0.7);			
 		}
