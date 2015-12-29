@@ -94,6 +94,7 @@ body {
 .about p {
 	margin-top: 10px;
 	text-align: justify;
+	padding: 0 5px;
 }
 
 .projects div {
@@ -170,3 +171,8 @@ span {
 	font-weight: bolder;
 }
 
+@media and (min-width : 320px) and (max-width : 480px) {
+    .content {
+        width:480px;
+    }
+}
