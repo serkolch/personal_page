@@ -175,4 +175,9 @@ span {
     .content {
         width:480px;
     }
+
+    .projects div {
+    	width: 470px;
+    	height: 350px;
+    }
 }
