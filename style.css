@@ -137,7 +137,7 @@ body {
 	padding: 25px;
 }
 
-.quiz:hover .quiz-overlay, .forum:hover .forum-overlay, .simon:hover .simon-overlay, .music:hover .music-overlay, .simon:focus .simon-overlay {
+.quiz:hover .quiz-overlay, .forum:hover .forum-overlay, .simon:hover .simon-overlay, .music:hover .music-overlay {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -183,4 +183,11 @@ span {
     .about p {
   		padding: 0 10px;
     }
+
+    .quiz-overlay, .forum-overlay, .simon-overlay, .music-overlay {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: white;			
+		}
 }
