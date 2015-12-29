@@ -191,6 +191,16 @@ span {
 		}
 
 		.quiz:hover .quiz-overlay, .forum:hover .forum-overlay, .simon:hover .simon-overlay, .music:hover .music-overlay {
-				display: block;
-			}
+			display: block;
+		}
+
+		.header {
+			display: block;
+		}
+
+		.inner {
+		  position: relative;
+		  top: 50%;
+		  transform: translateY(-50%);
+		}
 }
