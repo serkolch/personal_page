@@ -171,13 +171,13 @@ span {
 	font-weight: bolder;
 }
 
-@media and (min-width : 320px) and (max-width : 480px) {
+@media (max-width : 480px) {
     .content {
         width:480px;
     }
 
     .projects div {
-    	width: 470px;
-    	height: 350px;
+    	width: 400px;
+    	height: 250px;
     }
 }
