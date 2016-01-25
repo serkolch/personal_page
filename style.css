@@ -124,11 +124,11 @@ body {
 	background-image: url("basketball.jpg");
 }
 
-.simon {
-	background-image: url("images/kanyesays.png");
+.cycle {
+	background-image: url("bikes.png");
 }
 
-.quiz-overlay, .forum-overlay, .simon-overlay, .music-overlay {
+.quiz-overlay, .forum-overlay, .cycle-overlay, .music-overlay {
 	background-color: rgba(0,0,0,0.9);
 	display: none;
 }
@@ -137,7 +137,7 @@ body {
 	padding: 25px;
 }
 
-.quiz:hover .quiz-overlay, .forum:hover .forum-overlay, .simon:hover .simon-overlay, .music:hover .music-overlay {
+.quiz:hover .quiz-overlay, .forum:hover .forum-overlay, .cycle:hover .cycle-overlay, .music:hover .music-overlay {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -184,7 +184,7 @@ span {
   		padding: 0 10px;
     }
 
-    .quiz-overlay, .forum-overlay, .simon-overlay, .music-overlay {
+    .quiz-overlay, .forum-overlay, .cycle-overlay, .music-overlay {
 			display: -webkit-flex;
 			color: white;
 			background-color: rgba(0,0,0,0.7);
@@ -193,7 +193,7 @@ span {
 			color: white;
 		}
 
-		.quiz:hover .quiz-overlay, .forum:hover .forum-overlay, .simon:hover .simon-overlay, .music:hover .music-overlay {
+		.quiz:hover .quiz-overlay, .forum:hover .forum-overlay, .cycle:hover .cycle-overlay, .music:hover .music-overlay {
 			display: -webkit-flex;			
 		}
 
