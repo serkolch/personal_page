@@ -171,6 +171,12 @@ span {
 	font-weight: bolder;
 }
 
+#profile {
+	width: 300px;
+	border-radius: 150px;
+	margin-top: 5px;
+}
+
 @media (max-width : 480px) {
     .content, .header {
       width: 480px;
