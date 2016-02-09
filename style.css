@@ -125,7 +125,7 @@ body {
 }
 
 .cycle {
-	background-image: url("bikes.png");
+	background-image: url("bike.gif");
 }
 
 .quiz-overlay, .forum-overlay, .cycle-overlay, .music-overlay {
