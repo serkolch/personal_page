@@ -23,9 +23,13 @@ body {
 }
 
 .header {
-	display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
 	height: 100vh;
-	justify-content: center;
 	width: 100%;
 }
 
@@ -34,6 +38,7 @@ body {
 	color: white;
 	text-align: center;
 	align-self: center;
+	-webkit-align-self: center;
 }
 
 .inner h1 {
@@ -81,8 +86,12 @@ body {
 
 .projects {
 	margin-top: 30px;
-	display: flex;
-	justify-content: space-between;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
 	flex-wrap: wrap;
 }
 
@@ -138,9 +147,14 @@ body {
 }
 
 .quiz:hover .quiz-overlay, .forum:hover .forum-overlay, .cycle:hover .cycle-overlay, .music:hover .music-overlay {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+	align-self: center;
+	-webkit-align-self: center;
 	color: white;
 }
 
