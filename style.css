@@ -57,8 +57,12 @@ body {
 
 .icons-container {
 	margin: 10px auto 0 auto;
-	display: flex;
-	justify-content: space-between;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
 	width: 120px;
 }
 
@@ -86,12 +90,8 @@ body {
 
 .projects {
 	margin-top: 30px;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: space-between;
-  -ms-justify-content: space-between;
-  justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
 	flex-wrap: wrap;
 }
 
