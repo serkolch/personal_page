@@ -204,8 +204,12 @@ span {
 }
 
 @media (max-width : 480px) {
-    .header, .projects, .about {
+    .projects, .about {
       width: 98%;
+    }
+
+    .header {
+    	width: 95%;
     }
 
     .projects div {
