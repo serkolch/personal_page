@@ -84,7 +84,7 @@ body {
 }
 
 .about, .projects {
-	width: 480px;
+	width: 720px;
 	margin: 0 auto;
 }
 
@@ -108,8 +108,8 @@ body {
 
 .projects div {
 	max-width: 100%;
-	width: 230px;
-	height: 200px;
+	width: 345px;
+	height: 300px;
 	border: 1px solid rgb(140,140,140);
 }
 
@@ -147,9 +147,15 @@ body {
 }
 
 .quiz:hover .quiz-overlay, .forum:hover .forum-overlay, .cycle:hover .cycle-overlay, .music:hover .music-overlay {
-	display: flex;
+	display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+	-webkit-align-items: center;
+	-ms-align-items: center;
 	align-items: center;
-	justify-content: center;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;	
 	color: white;
 }
 
@@ -186,13 +192,24 @@ span {
 	margin-top: 5px;
 }
 
+@media (max-width: 720px) and (min-width: 480px) {
+	.header, .about, .projects {
+		width: 480px;
+	}
+
+	.projects div {
+		width: 230px;
+		height: 200px;
+	}
+}
+
 @media (max-width : 480px) {
-    .content, .header {
-      width: 480px;
+    .header, .projects, .about {
+      width: 98%;
     }
 
     .projects div {
-    	width: 400px;
+    	width: 100%;
     	height: 250px;
     }
     .about p {
@@ -201,18 +218,16 @@ span {
 
     .quiz-overlay, .forum-overlay, .cycle-overlay, .music-overlay {
 			display: -webkit-flex;
+		  display: -ms-flexbox;
+		  display: flex;
 			color: white;
 			background-color: rgba(0,0,0,0.7);
-			-webkit-align-items: center;
-			-webkit-justify-content: center;
-			color: white;
+		  -webkit-justify-content: center;
+		  -ms-justify-content: center;
+		  justify-content: center;
+	  	-webkit-align-items: center;
+			-ms-align-items: center;
+			align-items: center;
 		}
 
-		.quiz:hover .quiz-overlay, .forum:hover .forum-overlay, .cycle:hover .cycle-overlay, .music:hover .music-overlay {
-			display: -webkit-flex;			
-		}
-
-		.header {
-			display: -webkit-flex;
-		}
 }
