@@ -17,6 +17,7 @@
 <body>
 
   <div class="bg-image"></div>
+  <div class="bg-gif"></div>
   <div class="overlay"></div>
 
   <div class="header">
@@ -43,13 +44,14 @@
     <div class="about">
     
       <h1>About</h1>
-      <img id="profile" src="profile.gif">
+      <img id="profile" src="images/profile.gif">
       <p>Hi! I'm <span>Sergey Kolchinskiy</span> - a web developer, teaching assistant, volleyball coach, and engineer (ChE). 
       <br><br>
       <div class="select">
         <section class="button-active" data-name="projects">Projects</section>
         <section class="button" data-name="volleyball">Volleyball</section>
         <section class="button" data-name="engineering">Engineering</section>
+        <section class="button" data-name="reading">Reading</section>
       </div>
       <div id="projects" class="show">  
 
@@ -58,7 +60,7 @@
         <h1>Projects</h1> 
         <div class="project-list">
           <div class="cycle project">
-            <div class="cycle-overlay animated-short fadeIn">
+            <div class="cycle-overlay animated-short">
               <section class="container animated-short fadeInUp">
                 <h2 class="project-name">Cycle Planner</h2>
                 <h3 class="project-desc">My capstone General Assembly project - a Node.js & SemanticUI trip planning and data visualization</h3>
@@ -68,7 +70,7 @@
           </div> <!-- simon -->
 
           <div class="quiz project">
-            <div class="quiz-overlay animated-short fadeIn">
+            <div class="quiz-overlay animated-short">
               <section class="container animated-short fadeInUp">
                 <h2 class="project-name">QuizApp</h2>
                 <h3 class="project-desc">My third General Assembly project - create quizzes and track student performance</h3>
@@ -78,7 +80,7 @@
           </div> <!-- quiz -->
 
           <div class="forum project">
-            <div class="forum-overlay animated-short fadeIn">
+            <div class="forum-overlay animated-short">
               <section class="container animated-short fadeInUp">
                 <h2 class="project-name">Pick-Up Sports</h2>
                 <h3 class="project-desc">My second General Assembly project - a forum for athletes to coordinate and discuss sports</h3>
@@ -88,7 +90,7 @@
           </div> <!-- forum -->
 
           <div class="music project">
-            <div class="music-overlay animated-short fadeIn">
+            <div class="music-overlay animated-short">
               <section class="container animated-short fadeInUp">
                 <h2 class="project-name">Music Boxes</h2>
                 <h3 class="project-desc">A personal project - a musical octave with a randomizer to create random tunes</h3>
@@ -106,7 +108,7 @@
 
         <div class="project-list">
           <div class="vb1 project">
-            <div class="vb1-overlay animated-short fadeIn">
+            <div class="vb1-overlay animated-short">
               <section class="container animated-short fadeInUp">
                 <h3 class="project-desc2">The team that 'dabs' together, collabs much better</h3>
               </section>
@@ -114,7 +116,7 @@
           </div> <!-- vb1 -->
 
           <div class="vb2 project">
-            <div class="vb2-overlay animated-short fadeIn">
+            <div class="vb2-overlay animated-short">
               <section class="container animated-short fadeInUp">
                 <h3 class="project-desc2">On the beach for spring training 2016</h3>
               </section>
@@ -122,7 +124,7 @@
           </div> <!-- vb2 -->
 
           <div class="vb3 project">
-            <div class="vb3-overlay animated-short fadeIn">
+            <div class="vb3-overlay animated-short">
               <section class="container animated-short fadeInUp">
                 <h3 class="project-desc2">First day in the gym 2015</h3>
               </section>
@@ -130,7 +132,7 @@
           </div> <!-- vb3 -->
 
           <div class="vb4 project">
-            <div class="vb4-overlay animated-short fadeIn">
+            <div class="vb4-overlay animated-short">
               <section class="container animated-short fadeInUp">
                 <h3 class="project-desc2">#sideout</h3>
               </section>
@@ -145,7 +147,7 @@
         <h1>Engineering</h1>
         <div class="project-list">
           <div class="eng1 project">
-            <div class="eng1-overlay animated-short fadeIn">
+            <div class="eng1-overlay animated-short">
               <section class="container animated-short fadeInUp">
                 <h2 class="project-name">Hydrogen Refueling Station</h2>
                 <h3 class="project-desc2">A designed plant optimized for space limitations and economic considerations</h3>
@@ -154,7 +156,7 @@
           </div> <!-- eng1 -->
 
           <div class="eng2 project">
-            <div class="eng2-overlay animated-short fadeIn">
+            <div class="eng2-overlay animated-short">
               <section class="container animated-short fadeInUp">
                 <h2 class="project-name">Flexikeys</h2>
                 <h3 class="project-desc2">A piano keyboard unburdened by rectilinear constraints</h3>
@@ -163,7 +165,7 @@
           </div> <!-- eng2 -->
 
           <div class="eng3 project">
-            <div class="eng3-overlay animated-short fadeIn">
+            <div class="eng3-overlay animated-short">
               <section class="container animated-short fadeInUp">
                 <h2 class="project-name">Ice Generation</h2>
                 <h3 class="project-desc2">Determining the optimal operating conditions of proprietary equipment</h3>
@@ -172,7 +174,7 @@
           </div> <!-- eng3 -->
 
           <div class="eng4 project">
-            <div class="eng4-overlay animated-short fadeIn">
+            <div class="eng4-overlay animated-short">
               <section class="container animated-short fadeInUp">
                 <h2 class="project-name">Diet Optimization</h2>
                 <h3 class="project-desc2">A modernized version of the classic optimized diet (e.g. less navy beans, more variety)</h3>
@@ -181,6 +183,50 @@
           </div> <!-- eng4 -->
         </div> <!-- project-list -->
       </div> <!-- engineering -->
+
+      <div id="reading" class="no-show">
+        <p>I'm constantly learning and bettering myself. Here's a sample of what I'm reading - these are highly recommended if you like data and tech!</p>
+
+        <h1>Reading</h1>
+        <div class="project-list">
+          <div class="book1 project">
+            <div class="book1-overlay animated-short">
+              <section class="container animated-short fadeInUp">
+                <h2 class="project-name">Cool Infographics</h2>
+                <h3 class="project-desc2">Effective Communication with Data Visualization and Design</h3>
+              </section>
+            </div> <!-- book1-overlay -->
+          </div> <!-- book1 -->
+
+          <div class="book2 project">
+            <div class="book2-overlay animated-short">
+              <section class="container animated-short fadeInUp">
+                <h2 class="project-name">Knowledge Is Beautiful</h2>
+                <h3 class="project-desc2">Impossible Ideas, Invisible Patterns, Hidden Connections--Visualized</h3>
+              </section>
+            </div> <!-- book2-overlay -->
+          </div> <!-- book2 -->
+
+          <div class="book3 project">
+            <div class="book3-overlay animated-short">
+              <section class="container animated-short fadeInUp">
+                <h2 class="project-name">Adaptive Web Design</h2>
+                <h3 class="project-desc2">Crafting Rich Experiences with Progressive Enhancement</h3>
+              </section>
+            </div> <!-- book3-overlay -->
+          </div> <!-- book3 -->
+
+          <div class="book4 project">
+            <div class="book4-overlay animated-short">
+              <section class="container animated-short fadeInUp">
+                <h2 class="project-name">Where Good Ideas Come From</h2>
+                <h3 class="project-desc2">The Genius of the Tinkerer- The secret to innovation is combining odds and ends</h3>
+              </section>
+            </div> <!-- book4-overlay -->
+          </div> <!-- book4 -->
+        </div> <!-- project-list -->
+      </div> <!-- reading -->
+
     </div> <!-- about -->
     
   </div> <!-- content -->

@@ -3,7 +3,7 @@ body {
 	font-family: 'Lato', sans-serif;
 }
 
-.bg-image, .overlay {
+.bg-image, .overlay, .bg-gif {
 	height: 100vh;
 	width: 100%;
 	position: fixed;
@@ -11,10 +11,17 @@ body {
 }
 
 .bg-image {
-	background-image: url("city5.jpg");
+	background-image: url("images/city5.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	z-index: -2;
+	z-index: -3;
+}
+
+.bg-gif {
+  opacity: 0.5;
+  z-index: -2;
+  background-image: url("https://media.giphy.com/media/26FPOFusQUOKpnXTG/giphy.gif");
+  background-size: 100% 100%;
 }
 
 .overlay {
@@ -123,73 +130,101 @@ body {
 }
 
 .quiz {
-	background-image: url("quizapp.png");	
+	background-image: url("images/quizapp.png");	
 }
 
 .music {
-	background-image: url("musicboxes.png");
+	background-image: url("images/musicboxes.png");
 }
 
 .forum {
-	background-image: url("basketball.jpg");
+	background-image: url("images/basketball.jpg");
 }
 
 .cycle {
-	background-image: url("bike.gif");
+	background-image: url("images/bike.gif");
 }
 
 .vb1 {
-  background-image: url("vb1.jpg");
+  background-image: url("images/vb1.jpg");
 }
 
 .vb2 {
-  background-image: url("vb2.jpg");
+  background-image: url("images/vb2.jpg");
 }
 
 .vb3 {
-  background-image: url("vb3.jpg");
+  background-image: url("images/vb3.jpg");
 }
 
 .vb4 {
-  background-image: url("vb4.jpg");
+  background-image: url("images/vb4.jpg");
 }
 
 .eng1 {
-  background-image: url("eng1.png");
+  background-image: url("images/eng1.png");
 }
 
 .eng2 {
-  background-image: url("eng2.png");
+  background-image: url("images/eng2.png");
 }
 
 .eng3 {
-  background-image: url("eng3.png");
+  background-image: url("images/eng3.png");
 }
 
 .eng4 {
-  background-image: url("eng4.png");
+  background-image: url("images/eng4.png");
 }
 
-.quiz-overlay, .forum-overlay, .cycle-overlay, .music-overlay, .vb1-overlay, .vb2-overlay, .vb3-overlay, .vb4-overlay, .eng1-overlay, .eng2-overlay, .eng3-overlay, .eng4-overlay {
+.book1 {
+  background-image: url("images/book1.png");
+  background-position: top;
+}
+
+.book2 {
+  background-image: url("images/book2.png");
+}
+
+.book3 {
+  background-image: url("images/book3.png");
+}
+
+.book4 {
+  background-image: url("images/book4.png");
+  background-position: top;
+}
+
+.quiz-overlay, .forum-overlay, .cycle-overlay, .music-overlay, .vb1-overlay, .vb2-overlay, .vb3-overlay, .vb4-overlay, .eng1-overlay, .eng2-overlay, .eng3-overlay, .eng4-overlay, .book1-overlay, .book2-overlay, .book3-overlay, .book4-overlay {
 	background-color: rgba(0,0,0,0.9);
-	display: none;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;  
+  color: white;
+  opacity: 0;
+  transition: 0.4s opacity;
+}
+
+.project section {
+  display: none;
+}
+
+.project:hover section {
+  display: block;
 }
 
 .container {
 	padding: 25px;
 }
 
-.quiz:hover .quiz-overlay, .forum:hover .forum-overlay, .cycle:hover .cycle-overlay, .music:hover .music-overlay, .vb1:hover .vb1-overlay, .vb2:hover .vb2-overlay, .vb3:hover .vb3-overlay, .vb4:hover .vb4-overlay, .eng1:hover .eng1-overlay, .eng2:hover .eng2-overlay, .eng3:hover .eng3-overlay, .eng4:hover .eng4-overlay {
-	display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-	-webkit-align-items: center;
-	-ms-align-items: center;
-	align-items: center;
-  -webkit-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;	
-	color: white;
+.quiz:hover .quiz-overlay, .forum:hover .forum-overlay, .cycle:hover .cycle-overlay, .music:hover .music-overlay, .vb1:hover .vb1-overlay, .vb2:hover .vb2-overlay, .vb3:hover .vb3-overlay, .vb4:hover .vb4-overlay, .eng1:hover .eng1-overlay, .eng2:hover .eng2-overlay, .eng3:hover .eng3-overlay, .eng4:hover .eng4-overlay, .book1:hover .book1-overlay, .book2:hover .book2-overlay, .book3:hover .book3-overlay, .book4:hover .book4-overlay {
+  opacity: 1;
 }
 
 .project-name {
@@ -230,7 +265,8 @@ span {
 }
 
 .button, .button-active {
-  width: 200px;
+  width: 175px;
+  box-sizing: border-box;
   color: white;
   padding: 1em;
   transition: background-color 0.6s;
@@ -267,7 +303,7 @@ span {
 	}
 
   .button, .button-active {
-    width: 120px;
+    width: 115px;
   }
 }
 
@@ -296,7 +332,7 @@ span {
   		padding: 0 10px;
     }
 
-    .quiz-overlay, .forum-overlay, .cycle-overlay, .music-overlay, .vb1-overlay,.vb2-overlay,.vb3-overlay,.vb4-overlay, .eng1-overlay,.eng2-overlay,.eng3-overlay,.eng4-overlay {
+    .quiz-overlay, .forum-overlay, .cycle-overlay, .music-overlay, .vb1-overlay,.vb2-overlay,.vb3-overlay,.vb4-overlay, .eng1-overlay,.eng2-overlay,.eng3-overlay,.eng4-overlay, .book1-overlay, .book2-overlay, .book3-overlay, .book4-overlay {
 			display: -webkit-flex;
 		  display: -ms-flexbox;
 		  display: flex;
@@ -311,8 +347,8 @@ span {
 		}
 
     .button, .button-active {
-      width: 26%;
-      padding: 0.7em;
+      width: 24.5%;
+      padding: 0.7em 0.5em;
     }
 
 }
