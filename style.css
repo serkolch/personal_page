@@ -182,6 +182,7 @@ body {
 }
 
 .glitch {
+  position: relative;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 55px;
 	font-weight: lighter;
