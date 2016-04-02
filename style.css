@@ -508,9 +508,9 @@ span {
     }    
 
     .button, .button-active {
-      width: 40%;
+      width: 46%;
       padding: 1em;
-      font-size: 14px;
+      font-size: 16px;
     }
 
 }
