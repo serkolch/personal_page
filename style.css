@@ -421,6 +421,15 @@ span {
 	margin-top: 5px;
 }
 
+.select {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+  -ms-justify-content: space-around;
+  justify-content: space-around;
+}
+
 .button, .button-active {
   width: 175px;
   box-sizing: border-box;
@@ -461,7 +470,7 @@ span {
 	}
 
   .button, .button-active {
-    width: 115px;
+    width: 47%;
   }
 }
 
@@ -499,9 +508,9 @@ span {
     }    
 
     .button, .button-active {
-      width: 24.5%;
-      padding: 1em 0.5em;
-      font-size: 11px;
+      width: 40%;
+      padding: 1em;
+      font-size: 14px;
     }
 
 }
