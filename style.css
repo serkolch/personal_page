@@ -500,7 +500,7 @@ span {
     }
 
     .quiz-overlay, .forum-overlay, .cycle-overlay, .music-overlay, .vb1-overlay,.vb2-overlay,.vb3-overlay,.vb4-overlay, .eng1-overlay,.eng2-overlay,.eng3-overlay,.eng4-overlay, .book1-overlay, .book2-overlay, .book3-overlay, .book4-overlay {
-			opacity: 0.7;
+			opacity: 0.8;
 		}
 
     .project section {
