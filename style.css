@@ -294,8 +294,8 @@ body {
 	background-image: url("images/musicboxes.png");
 }
 
-.forum {
-	background-image: url("images/basketball.jpg");
+.chempro {
+	background-image: url("images/chempro.png");
 }
 
 .cycle {
@@ -352,7 +352,7 @@ body {
   background-position: top;
 }
 
-.quiz-overlay, .forum-overlay, .cycle-overlay, .music-overlay, .vb1-overlay, .vb2-overlay, .vb3-overlay, .vb4-overlay, .eng1-overlay, .eng2-overlay, .eng3-overlay, .eng4-overlay, .book1-overlay, .book2-overlay, .book3-overlay, .book4-overlay {
+.quiz-overlay, .chempro-overlay, .cycle-overlay, .music-overlay, .vb1-overlay, .vb2-overlay, .vb3-overlay, .vb4-overlay, .eng1-overlay, .eng2-overlay, .eng3-overlay, .eng4-overlay, .book1-overlay, .book2-overlay, .book3-overlay, .book4-overlay {
 	background-color: rgba(0,0,0,0.9);
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -380,7 +380,7 @@ body {
 	padding: 25px;
 }
 
-.quiz:hover .quiz-overlay, .forum:hover .forum-overlay, .cycle:hover .cycle-overlay, .music:hover .music-overlay, .vb1:hover .vb1-overlay, .vb2:hover .vb2-overlay, .vb3:hover .vb3-overlay, .vb4:hover .vb4-overlay, .eng1:hover .eng1-overlay, .eng2:hover .eng2-overlay, .eng3:hover .eng3-overlay, .eng4:hover .eng4-overlay, .book1:hover .book1-overlay, .book2:hover .book2-overlay, .book3:hover .book3-overlay, .book4:hover .book4-overlay {
+.quiz:hover .quiz-overlay, .chempro:hover .chempro-overlay, .cycle:hover .cycle-overlay, .music:hover .music-overlay, .vb1:hover .vb1-overlay, .vb2:hover .vb2-overlay, .vb3:hover .vb3-overlay, .vb4:hover .vb4-overlay, .eng1:hover .eng1-overlay, .eng2:hover .eng2-overlay, .eng3:hover .eng3-overlay, .eng4:hover .eng4-overlay, .book1:hover .book1-overlay, .book2:hover .book2-overlay, .book3:hover .book3-overlay, .book4:hover .book4-overlay {
   opacity: 1;
 }
 
@@ -472,6 +472,12 @@ span {
   .button, .button-active {
     width: 47%;
   }
+  .project-name {
+    font-size: 19px;
+  }
+  .project-desc{
+    font-size: 15px;
+  }
 }
 
 @media (max-width : 520px) {
@@ -499,7 +505,7 @@ span {
   		padding: 0 10px;
     }
 
-    .quiz-overlay, .forum-overlay, .cycle-overlay, .music-overlay, .vb1-overlay,.vb2-overlay,.vb3-overlay,.vb4-overlay, .eng1-overlay,.eng2-overlay,.eng3-overlay,.eng4-overlay, .book1-overlay, .book2-overlay, .book3-overlay, .book4-overlay {
+    .quiz-overlay, .chempro-overlay, .cycle-overlay, .music-overlay, .vb1-overlay,.vb2-overlay,.vb3-overlay,.vb4-overlay, .eng1-overlay,.eng2-overlay,.eng3-overlay,.eng4-overlay, .book1-overlay, .book2-overlay, .book3-overlay, .book4-overlay {
 			opacity: 0.8;
 		}
 
