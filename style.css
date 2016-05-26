@@ -150,7 +150,7 @@ body {
 }
 
 .bg-gif {
-  opacity: 0.5;
+  opacity: 0.2;
   z-index: -2;
   background-image: url("https://media.giphy.com/media/26FPOFusQUOKpnXTG/giphy.gif");
   background-size: 100% 100%;
