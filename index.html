@@ -6,25 +6,30 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,300italic" rel="stylesheet" type="text/css">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
-  <link href="style.css" rel="stylesheet">
-  <link href="animate.css" rel="stylesheet">
+  <!-- <link href="style.css" rel="stylesheet"> -->
+  <!-- <link href="animate.css" rel="stylesheet"> -->
+  <link href="pixel.css" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-2.1.4.js"></script>  
-  <script src="main.js"></script>
+  <!-- <script src="main.js"></script> -->
   <meta name="viewport" content="width=device-width">
   <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
   <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
 </head>
 <body>
 
-  <div class="bg-image"></div>
-  <div class="bg-gif"></div>
-  <div class="overlay"></div>
+<header>
+  <img src="images/book2.png" title="sergey">
+  <canvas id="header-canvas" width="400" height="400" style="cursor: inherit"></canvas>
+</header>
 
-  <div class="header">
-    <div class="inner animated fadeInUp">
-      <h1 class="glitch" data-text="Sergey Kolchinskiy">Sergey Kolchinskiy</h1>
-      <h2>Web Developer. Volleyball Coach. Engineer.</h2>
-      <h3>serkolch@gmail.com</h3>
+  <div class="content">
+
+    <div class="about">
+    
+      <h1>About</h1>
+      <img id="profile" src="images/profile.gif">
+      <p>Hi! I'm <span>Sergey Kolchinskiy</span> - a web developer, teaching assistant, volleyball coach, and engineer (ChE). 
+      <br><br>
       <div class="icons-container">
         <a target="_blank" href="https://github.com/serkolch">
             <i class="fa fa-github fa-lg"></i>
@@ -36,17 +41,6 @@
             <i class="fa fa-linkedin fa-lg"></i>
         </a>
       </div> <!-- icons-container -->
-    </div> <!-- inner -->
-  </div> <!-- header -->
-
-  <div class="content">
-
-    <div class="about">
-    
-      <h1>About</h1>
-      <img id="profile" src="images/profile.gif">
-      <p>Hi! I'm <span>Sergey Kolchinskiy</span> - a web developer, teaching assistant, volleyball coach, and engineer (ChE). 
-      <br><br>
       <div class="select">
         <section class="button-active" data-name="projects">PROJECTS</section>
         <section class="button" data-name="volleyball">VOLLEYBALL</section>
