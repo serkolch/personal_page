@@ -1,10 +1,16 @@
-$(document).ready(function(){
+(function(){
 
-  $('.select section').on('click',function(){
-    $('.button-active').toggleClass('button button-active');
-    $(this).toggleClass('button button-active');
-    $('.show').toggleClass('show no-show');
-    $('#'+$(this).attr('data-name')).toggleClass('show no-show');
-  });
+  document.querySelectorAll('.select section').forEach(function(button){
+    button.addEventListener('click',function(e){
+      
+      document.querySelector('.button-active').classList = 'button';
+      e.target.classList = 'button-active';
+      
+      document.querySelector('.show').classList = 'no-show';
+      let showID = e.target.attributes[1].value;
+      document.querySelector(`#${showID}`).classList = 'show';
 
-});
+    })
+  })
+
+})();
